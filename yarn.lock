@@ -823,7 +823,7 @@ stimulus@^3.0.1:
     "@hotwired/stimulus" "^3.0.1"
     "@hotwired/stimulus-webpack-helpers" "^1.0.0"
 
-stimulus_reflex@^3.5.0-pre8:
+stimulus_reflex@3.5.0-pre8:
   version "3.5.0-pre8"
   resolved "https://registry.yarnpkg.com/stimulus_reflex/-/stimulus_reflex-3.5.0-pre8.tgz#e33c33c639d87b67accbe839b962e054337bb9f6"
   integrity sha512-9nGNTeMf3URG3VsgCVt53E22H4N1DzGoyQ99NxAloxe++hbXUwsR/Lfw29uSQXSHXvzWI+waOhjZxesCIlWxPQ==

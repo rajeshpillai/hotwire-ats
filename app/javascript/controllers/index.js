@@ -41,4 +41,12 @@ import NotificationsController from "./notifications_controller.js"
 application.register("notifications", NotificationsController)
 
 import SlideoverController from "./slideover_controller.js"
+import StimulusReflex from 'stimulus_reflex'
+import consumer from '../channels/consumer'
+import controller from '../controllers/application_controller'
+import CableReady from 'cable_ready'
 application.register("slideover", SlideoverController)
+application.consumer = consumer
+StimulusReflex.initialize(application, { controller, isolate: true })
+StimulusReflex.debug = process.env.RAILS_ENV === 'development'
+CableReady.initialize({ consumer })

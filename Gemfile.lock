@@ -97,6 +97,7 @@ GEM
     digest (3.1.0)
     erubi (1.10.0)
     ffi (1.15.4)
+    foreman (0.87.2)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.8.11)
@@ -147,6 +148,8 @@ GEM
       timeout
     nio4r (2.5.8)
     nokogiri (1.13.1-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.13.1-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     pg (1.2.3)
@@ -236,12 +239,14 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
   cssbundling-rails
   debug
   devise!
+  foreman (~> 0.87.2)
   image_processing (~> 1.2)
   inline_svg (~> 1.8)
   jbuilder
